@@ -13,6 +13,7 @@ export default function threeDInit() {
   document.body.appendChild(renderer.domElement);
   const geometry = new THREE.SphereGeometry(0.5, 100, 100);
   const image = "./res/" + images[Math.floor(Math.random()*images.length)];
+  console.log(image);
   const texture = new THREE.TextureLoader().load(image);
   const material = new THREE.MeshPhongMaterial({map: texture});
   const sphere = new THREE.Mesh(geometry, material);
