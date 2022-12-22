@@ -1,5 +1,5 @@
 import * as THREE from "../_snowpack/pkg/three.js";
-const images = ["dickson.jpg", "dude.jpg", "icedweller.png"];
+const images = ["dickson.jpg", "dude.jpg", "icedweller.png", "richard.jpg"];
 export default function threeDInit() {
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1e3);
